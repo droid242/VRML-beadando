@@ -9,3 +9,15 @@ Shape	{ #fa_torzse
 		radius 0.25
 	}
 }
+
+Transform {
+	translation	0 0.75 0
+	children	[
+		Shape	{
+			appearance Appearance {
+				material	Material	{ diffuseColor 0 1 0 }
+			}
+			geometry	Sphere { radius 0.7 }
+		}
+	]
+}
