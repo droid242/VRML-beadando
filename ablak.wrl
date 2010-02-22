@@ -1,0 +1,51 @@
+#VRML V2.0 utf8
+
+DEF TOK_ALLO Shape { #tok_bal
+	appearance Appearance {
+		material	Material	{ diffuseColor 0.5 0.3 0.2 }
+	}
+	geometry	Box { size 0.1 1 0.1 }
+}
+
+Transform { #tok_jobb
+	translation	0.9 0 0
+	children	[ USE TOK_ALLO ]
+}
+
+DEF TOK_FEKVO Transform	{ #tok_lenn
+	rotation	0 0 1 1.570796326794897
+	translation	0.45 -0.45 0
+	children	[ USE TOK_ALLO ]
+}
+
+Transform { #tok_fenn
+	translation	0 0.9 0
+	children	[ USE TOK_FEKVO ]
+}
+
+
+
+Transform { #uveg
+	translation	0.45 0 0
+	children	[
+		Shape	{
+			appearance Appearance {
+				material	Material	{ diffuseColor 0.85 1 1 }
+			}
+			geometry	Box { size 0.8 0.8 0.05 }
+		}
+	]
+}
+
+
+Transform { #f_osztas
+	translation	0.45 0 0
+	scale	0.51 1 0.51
+	children	[ USE TOK_ALLO ]
+}
+
+Transform { #v_osztas
+	translation	0 0.225 0
+	scale	1 0.51 0.51
+	children	[ USE TOK_FEKVO ]
+}
