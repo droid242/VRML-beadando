@@ -283,3 +283,19 @@ Transform {
 }
 
 #--- kapu ---
+Transform {
+	translation 2.08 -0.15 1.02
+	scale 0.4 0.4 0.4
+	children [ #kapu
+		Inline { url "items/kapu.wrl" }
+	]
+}
+Transform {
+	translation 2.08 -0.15 0.68
+	scale 0.4 0.4 0.4
+	children [ #kapu
+		Inline { url "items/kapu.wrl" }
+	]
+}
+
+#--- ut ---
